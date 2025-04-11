@@ -1,0 +1,179 @@
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+
+.hero-section {
+    background: url('hpbg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    word-spacing: 0%;
+}
+
+.hero-content .btn:hover {
+    background-color: #218838;
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+    margin-bottom: 20px; 
+    overflow: hidden;
+}
+
+
+.card-img-top {
+    border-radius: 10px;
+    height: 200px;  
+    object-fit: cover;  
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 15px;
+    height: 100%; 
+}
+
+ 
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    flex-grow: 1;  
+}
+
+
+.card .btn {
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.card .btn:hover {
+    background-color: #218838;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;  
+}
+
+
+.col-md-4 {
+    flex: 1 1 30%;  
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;  
+    }
+
+    .col-md-4 {
+        flex: 1 1 48%;  
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 1 1 100%;  
+    }
+}
